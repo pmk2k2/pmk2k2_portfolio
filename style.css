@@ -215,7 +215,6 @@ section{
     box-shadow: 0 0 1rem #fff;
     transition: var(--smooth);
 }
-
 .about h3{
     text-align: center;
     padding-bottom: 30px;
@@ -280,6 +279,9 @@ section{
         "left" 
         "right";
     }
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
   .skill_language h5{
@@ -290,27 +292,34 @@ section{
     text-align: center;
     padding-bottom: 30px;
 }
-.project-container{
-    display: flex;
+.projects {
+    text-align: center;
 }
 
-.project-box{
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.project-box {
     position: relative;
-    display: flex;
     box-shadow: 0 0 2rem #fff;
-    margin: 20px;
     cursor: pointer;
-    
 }
-.project-box img{
+
+.project-box img {
     width: 100%;
-    
+    height: auto;
+    object-fit: cover;
 }
-.project-box:hover img{
+
+.project-box:hover img {
     transform: scale(1.1);
     transition: var(--smooth);
 }
-.layer{
+
+.layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -322,7 +331,12 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 4rem;    
+    padding: 0 4rem;
+}
+.download{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact{
