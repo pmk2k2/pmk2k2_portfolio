@@ -288,35 +288,32 @@ section{
     padding-top: 15px;
   } 
 
-.projects h3{
-    text-align: center;
-    padding-bottom: 30px;
-}
 .projects {
     text-align: center;
 }
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
+    grid-template-column: 1fr 1fr 1fr;
+    column-gap: 50px;
+    
 }
 
 .project-box {
-    position: relative;
-    box-shadow: 0 0 2rem #fff;
+    display: flex;
+    flex-direction: row; 
     cursor: pointer;
+    padding: 20px;
 }
 
 .project-box img {
-    width: 100%;
+    width: 50%;
     height: auto;
     object-fit: cover;
 }
-
-.project-box:hover img {
-    transform: scale(1.1);
-    transition: var(--smooth);
+project-content{
+    padding: 20px;
+    align-items: left
 }
 
 .layer {
@@ -332,11 +329,6 @@ section{
     align-items: center;
     text-align: center;
     padding: 0 4rem;
-}
-.download{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .contact{
