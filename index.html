@@ -7,6 +7,12 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("LuspA4BAxGvs3KP5C");
+      })();
+    </script>
 </head>
 <body>
     <video autoplay loop muted plays-inline class="backgroundvideo">
@@ -107,12 +113,12 @@
         
     <div class ="skill_language">
         <h4>Skills</h4>
-        <h5>Programming languages</h5>
-        <p>Java, C++, PostgreSQL</p>
-        <h5>Adobe</h5>
-        <p>XD, Illustrator, Photoshop</p>
-        <h5>Front-end languages</h5>
-        <p>HTML, CSS, Javascript</p>
+        <h5>Programming</h5>
+        <p>Java, C++, SQL</p>
+        <h5>Front-end</h5>
+        <p>HTML, CSS, Javascript, Tailwindcss, Typescript, React (learning)</p>
+        <h5>Design</h5>
+        <p>Figma, Adobe XD, Adobe Illustrator, Adobe Photoshop</p>
         <h5>Microsoft Office</h5>
         <p>Word (MOS-Certificate), Powerpoint (MOS-Certificate), Excel</p>
         <h4>Languages</h4>
@@ -121,54 +127,60 @@
       </section>
       <section class="projects" id="projects">
         <h3>Projects</h3>
-       <div class="project-container">
-          <div class="project-box">
-           <img src="/img/product.png" alt="">
-          <div class="project-content">
-           <h4>JIA-Furniture Store</h4>
-            <p>UX/UI Design</p>
-        </div>
-           </div>
-          
-          <div class="project-box">
-            <img src="/img/product.png" alt="">
-            <div class="project-content">
-                <h4>JIA-Furniture Store</h4>
-                 <p>UX/UI Design</p>
-             </div>
-        </div>
-           <div class="project-box">
-            <img src="/img/product1.png" alt="">
-            <div class="project-content">
-                <h4>JIA-Furniture Store</h4>
-                 <p>UX/UI Design</p>
-             </div>
+        <div class="project-container">
+            <div class="project-box">
+                <a href="https://github.com/pmk2k2/PianoTiles">
+                    <img src="/img/product.png" alt="Piano Tiles Game">
+                </a>
+                <div class="project-content">
+                    <h4>Piano Tiles Game</h4>
+                    <p>Java</p>
+                </div>
             </div>
-          </div>
-      </section>
+            <div class="project-box">
+                <a href="https://github.com/pmk2k2/MP3Player.git">
+                    <img src="/img/product2.png" alt="MP3 Player">
+                </a>
+                <div class="project-content">
+                    <h4>MP3 Player</h4>
+                    <p>Java</p>
+                </div>
+            </div>
+            <div class="project-box">
+                <a href="https://www.figma.com/design/kIWtpnVfp6JpFVMY2QOdoQ/GeM?node-id=0-1&m=dev&t=s0UUojKBF8upqvzQ-1">
+                    <img src="/img/product3.png" alt="NetIT">
+                </a>
+                <div class="project-content">
+                    <h4>NetIT</h4>
+                    <p>Figma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
       <section class="contact" id="contact">
         <h3>Contact</h3>
           <div class="container">
           <form id="myForm" action="#">
           <div class="input-box">
-              <input type="text" id="name" required>
+              <input type="text" id="name" name="name" required>
                   <label for="name"><img src="/img/user.svg"/>Your Name</label>
               </div>
               
               
            <div class="input-box">
-              <input type="number" id="number" required>
+              <input type="number" id="number" name="number" required>
                   <label for="number"><img src="/img/phone.svg"/>Telephone number</label>
               </div>
               
               
            <div class="input-box">
-              <input type="email" id="email" required>
+              <input type="email" id="email" name="email" required>
                   <label for="email"><img src="/img/envelope.svg"/>E-mail</label>
               </div>
               
               <div class="input-box">
-                  <textarea id="message" row="10" required></textarea>
+                  <textarea id="message" name="message" row="10" required></textarea>
                   <label for="message">Your message here...</label>
               </div>
               <div class="submit-btn">
